@@ -1,0 +1,152 @@
+/*
+ * Basic styling for the online store. The layout is responsive and
+ * uses flexbox to arrange product cards. Feel free to customise
+ * colours, spacing and typography to your liking.
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.notification {
+  background: #e0f7e9;
+  border: 1px solid #b2dfdb;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
+  color: #00695c;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+.product-card p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.product-card button {
+  margin-top: auto;
+  padding: 10px 20px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.product-card button:hover {
+  background: #115293;
+}
+
+.cart {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cart h2 {
+  margin-top: 0;
+}
+
+.cart ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 10px 0;
+}
+
+.cart li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart li:last-child {
+  border-bottom: none;
+}
+
+.cart li button {
+  padding: 5px 10px;
+  background: #d32f2f;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.2s;
+}
+
+.cart li button:hover {
+  background: #9a0007;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.checkout-button:hover {
+  background: #2e7d32;
+}

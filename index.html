@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Store Proof of Concept</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div id="root"></div>
+  <!--
+    React and ReactDOM are loaded from unpkg. These UMD builds expose
+    global variables `React` and `ReactDOM` which we use in our
+    application script. In a production environment you might use
+    the minified builds, but for clarity the development builds are
+    included here.
+  -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <!-- Our application code -->
+  <script src="/static/app.js"></script>
+</body>
+</html>
